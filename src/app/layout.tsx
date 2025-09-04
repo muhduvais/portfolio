@@ -25,7 +25,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" 
+    suppressHydrationWarning
+    className="transition-colors duration-500"
+    >
       <body
         className={`${fira_Code.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >

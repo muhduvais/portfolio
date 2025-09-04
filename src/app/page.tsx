@@ -1,28 +1,29 @@
 import Image from "next/image";
 import ThemeToggle from "./ThemeToggle";
+import ProjectCard from "@/components/ui/ProjectCard";
 
 export default function HomePage() {
   return (
     <main className="relative space-y-12">
-      <div className="fixed right-8 top-5">
+      <div className="fixed right-4 top-4 sm:right-8 sm:top-5 z-10">
         <ThemeToggle />
       </div>
 
       <section id="about">
-        <h2 className="py-3 text-2xl font-bold">Hey, I’m Uvais 👋</h2>
+        <h2 className="py-3 text-2xl font-bold">Hey, I'm Uvais 👋</h2>
 
         <p className="pb-3">
           I enjoy exploring ideas through code, turning them into simple yet
           creative interfaces. Building things that look good and feel right
-          excites me, and I’m always pushing myself to learn and improve a
+          excites me, and I'm always pushing myself to learn and improve a
           little every day.
         </p>
 
         <p>
-          Beyond coding, I dedicate time to reading and I’m steadily growing
+          Beyond coding, I dedicate time to reading and I'm steadily growing
           that habit. I also enjoy gaming — from adventurous period stories to
           modern open worlds — as they inspire me to think about narratives and
-          experiences. I’m curious about design too, and I love crafting
+          experiences. I'm curious about design too, and I love crafting
           minimal, functional visuals that feel both creative and premium.
         </p>
       </section>
@@ -45,65 +46,35 @@ export default function HomePage() {
         <h2 className="py-3 text-2xl font-bold">Projects</h2>
 
         <div className="space-y-8">
-          {/* Project 1 */}
-          <div className="space-y-2">
-            <h3 className="text-xl font-semibold">HelpOre</h3>
-            <p>
-              A welfare management platform that helps charitable societies
+          <ProjectCard
+            title="HelpOre"
+            description="A welfare management platform that helps charitable societies
               organize requests, events, and donations. Includes volunteer and
               ambulance assistance, live chat, video calls, and a Stripe-powered
-              donation system.
-            </p>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              Tech Stack: MERN, WebRTC, Socket.io, Stripe
-            </p>
-            <div className="flex gap-4">
-              <a
-                href="https://helpore.online"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-indigo-500 hover:underline"
-              >
-                Live Demo
-              </a>
-              <a
-                href="https://github.com/muhduvais/helpore"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-indigo-500 hover:underline"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
+              donation system."
+            image="/projects/helpore.jpg"
+            tech={["Next.js", "MongoDB", "Stripe", "WebRTC"]}
+            demo="https://helpore.online"
+            github="https://github.com/muhduvais/helpore"
+          />
 
-          {/* Project 2 */}
-          <div className="space-y-2">
-            <h3 className="text-xl font-semibold">DayTiles</h3>
-            <p>
-              A goal-tracking app designed for teams to set short-term goals and
+          <ProjectCard
+            title="DayTiles"
+            description="A goal-tracking app designed for teams to set short-term goals and
               track daily progress visually. Includes modular architecture,
-              PostgreSQL, Prisma ORM, and Docker setup.
-            </p>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              Tech Stack: Next.js, Prisma, PostgreSQL, Docker
-            </p>
-            <div className="flex gap-4">
-              <a href="#" className="text-indigo-500 hover:underline">
-                Live Demo
-              </a>
-              <a href="#" className="text-indigo-500 hover:underline">
-                GitHub
-              </a>
-            </div>
-          </div>
+              PostgreSQL, Prisma ORM, and Docker setup."
+            image="/projects/daytiles.jpg"
+            tech={["Next.js", "Prisma", "PostgreSQL", "Docker"]}
+            demo="https://daytiles.online"
+            github="https://github.com/muhduvais/daytiles"
+          />
         </div>
       </section>
 
       <section id="blog">
         <h2 className="py-3 text-2xl font-bold">Blog</h2>
         <p className="text-gray-600 dark:text-gray-400">
-          I’ll be sharing thoughts, tutorials, and learnings here soon. Stay
+          I'll be sharing thoughts, tutorials, and learnings here soon. Stay
           tuned!
         </p>
       </section>
