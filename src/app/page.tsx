@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ThemeToggle from "./ThemeToggle";
 import ProjectCard from "@/components/ui/ProjectCard";
 
@@ -10,20 +9,20 @@ export default function HomePage() {
       </div>
 
       <section id="about">
-        <h2 className="py-3 text-2xl font-bold">Hey, I'm Uvais 👋</h2>
+        <h2 className="py-3 text-2xl font-bold">Hey, I&apos;m Uvais 👋</h2>
 
         <p className="pb-3">
           I enjoy exploring ideas through code, turning them into simple yet
           creative interfaces. Building things that look good and feel right
-          excites me, and I'm always pushing myself to learn and improve a
+          excites me, and I&apos;m always pushing myself to learn and improve a
           little every day.
         </p>
 
         <p>
-          Beyond coding, I dedicate time to reading and I'm steadily growing
+          Beyond coding, I dedicate time to reading and I&apos;m steadily growing
           that habit. I also enjoy gaming — from adventurous period stories to
           modern open worlds — as they inspire me to think about narratives and
-          experiences. I'm curious about design too, and I love crafting
+          experiences. I&apos;m curious about design too, and I love crafting
           minimal, functional visuals that feel both creative and premium.
         </p>
       </section>
@@ -74,7 +73,7 @@ export default function HomePage() {
       <section id="blog">
         <h2 className="py-3 text-2xl font-bold">Blog</h2>
         <p className="text-gray-600 dark:text-gray-400">
-          I'll be sharing thoughts, tutorials, and learnings here soon. Stay
+          I&apos;ll be sharing thoughts, tutorials, and learnings here soon. Stay
           tuned!
         </p>
       </section>
